@@ -13,10 +13,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script>
         function validate(){
-            let name = document.forms["form-name"]["fname"].value;
-            let lower = name.toLowerCase();
+            let name = document.forms["form-name"]["fname"].value.toLowerCase();
 
-            if (lower != "nicole"){
+            if (name != "nicole"){
                 alert("NOT MY POOKIE >:(");
                 return false;
             }
