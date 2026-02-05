@@ -13,13 +13,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
     <script>
         function validate(){
-            let q1 = document.forms["form-quiz"]["q1"].value.toLowerCase();
-            let q2 = document.forms["form-quiz"]["q2"].value.toLowerCase();
-            let q3 = document.forms["form-quiz"]["q3"].value.toLowerCase();
+            const q1 = document.forms["form-quiz"].q1.value.toLowerCase();
+            const q2 = document.forms["form-quiz"].q2.value.toLowerCase();
+            const q3 = document.forms["form-quiz"].q3.value.toLowerCase();
 
-            if ((q1 != "chinatown") || ((q2 != "delancy") || (q2 != "the delancy")) || (q3 != "queen")){
+            if(q1 != "chinatown"){
                 alert("IMPOSTER!!!");
-                window.Location.href = "index.html";
+                console.log(q1 == "chinatown")
+                console.log((q2 == "delancy") || (q2 == "the delancy"))
+                console.log(q3 == "queen")
+                return false;
+            }
+            if((q2 != "delancy") && (q2 != "the delancy")){
+                alert("IMPOSTER!!!");
+                console.log(q1 == "chinatown")
+                console.log((q2 == "delancy") || (q2 == "the delancy"))
+                console.log(q3 == "queen")
+                return false;
+            }
+            if(q3 != "queen"){
+                alert("IMPOSTER!!!");
+                console.log(q1 == "chinatown")
+                console.log((q2 == "delancy") || (q2 == "the delancy"))
+                console.log(q3 == "queen")
                 return false;
             }
             alert("You passed!");
@@ -43,7 +59,7 @@
                 <label for="q3">You are my warrior ________</label>
                 <input type="text" id="q3" name="q3" autocomplete="off"></input>
 
-                <button type="buttin" value="Are you my pookie?">submit</button>
+                <button type="submit">submit</button>
             </form>
         </div>
     </div>   
