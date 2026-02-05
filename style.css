@@ -1,0 +1,53 @@
+* {
+    background-color: pink;
+}
+h1{
+    color: white;
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40pt;
+}
+.wrapper {
+    position: relative;
+    height: 98vh;
+    width: 98vw;
+    margin: 0px;
+}
+.internal{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-49%,-49%);
+
+}
+button {
+    background-color: #cf7a90;
+    border-radius: 12px;
+}
+.button2{
+    width: 200px; height: 100px;
+    min-width: 80px;
+    min-height: 40px;
+}
+.yes-button{
+    transform: none;
+}
+.no-button{
+    transform: translateY(10%);
+}
+.lobster-regular {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container{
+    position: absolute;
+    margin: 0%;
+    height: 99vh;
+    width: 99vw;
+}
+#end-screen{
+    z-index: 9999;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love you</title>
+    <link
+    rel="stylesheet"
+    href="./style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script>
+        function changeButton(){
+            var noBtn = document.getElementById("no-button");
+            var yesBtn = document.getElementById("yes-button");
+            var yesWidth = yesBtn.clientWidth;
+            var yesHeight = yesBtn.clientHeight;
+            var noWidth = noBtn.clientWidth;
+            var noHeight = noBtn.clientHeight;
+
+            yesBtn.style.width = (yesWidth + 20) + "px";
+            yesBtn.style.height = (yesHeight + 10) + "px";
+            noBtn.style.width = (noWidth - 20) + "px";
+            noBtn.style.height = (noHeight - 10) + "px";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="internal">
+            <h1>
+                Will you be my Valentine?
+            </h1>
+            <div class="yes-button">
+                <a href="success.html">
+                    <button type="button" id="yes-button" class="button2">YES OF COURSE</button>
+                </a>
+            </div>
+            <div class="no-button">          
+                <button type="button" id="no-button" onclick="changeButton()" class="button2">NO WAY STINKY</button>
+            </div>
+        </div>
+    </div> 
+
+</body>
