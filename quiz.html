@@ -17,9 +17,10 @@
             let q2 = document.forms["form-quiz"]["q2"].value.toLowerCase();
             let q3 = document.forms["form-quiz"]["q3"].value.toLowerCase();
 
-            if ((q1 != "chinatown") && ((q2 != "delancy") || (q2 != "the delancy")) && (q3 != "queen")){
+            if ((q1 != "chinatown") || ((q2 != "delancy") || (q2 != "the delancy")) || (q3 != "queen")){
                 alert("IMPOSTER!!!");
                 window.Location.href = "index.html";
+                return false;
             }
             alert("You passed!");
             window.Location.href = "home.html";
