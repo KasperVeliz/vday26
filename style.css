@@ -8,6 +8,13 @@ h1{
     font-style: normal;
     font-size: 40pt;
 }
+h2{
+    color: white;
+    font-family: "Lobster", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30pt;
+}
 .wrapper {
     position: relative;
     height: 98vh;
@@ -48,6 +55,25 @@ button {
     height: 99vh;
     width: 99vw;
 }
-#end-screen{
+.end-screen{
     z-index: 9999;
+    font-size: 20pt;
+}
+#quiz {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#quiz label{
+    margin: 10px;
+}
+#quiz input{
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+#quiz button{
+    width: 100px;
+    padding: 10px;
 }

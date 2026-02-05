@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love you </title>
+    <link
+    rel="stylesheet"
+    href="./style.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script>
+        function validate(){
+            let q1 = document.forms["form-quiz"]["q1"].value.toLowerCase();
+            let q2 = document.forms["form-quiz"]["q2"].value.toLowerCase();
+            let q3 = document.forms["form-quiz"]["q3"].value.toLowerCase();
+
+            if ((q1 != "chinatown") && ((q2 != "delancy") || (q2 != "the delancy")) && (q3 != "queen")){
+                alert("IMPOSTER!!!");
+                window.Location.href = "index.html";
+            }
+            alert("You passed!");
+            window.Location.href = "home.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="internal">
+            <h1>
+                Quiz
+            </h1>
+            <form id="quiz" name="form-quiz" onsubmit="return validate()" method="get" action="home.html">
+                <label for="q1">Where was the first resturaunt I took you to?</label>
+                <input type="text" id="q1" name="q1"></input>
+                
+                <label for="q2">Where was our first kiss?</label>
+                <input type="text" id="q2" name="q2"></input>
+
+                <label for="q3">You are my warrior ________</label>
+                <input type="text" id="q3" name="q3"></input>
+
+                <button type="buttin" value="Are you my pookie?">submit</button>
+            </form>
+        </div>
+    </div>   
+</body>
